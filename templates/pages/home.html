@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+<div class="row ">
+<!--left sidebar -->
+ <div class="col-md-3">
+  <div class=" d-grid ">
+  <button class="btn btn-light m-1" type="button">FEED</button>
+  <button class="btn btn-light" type="button">PROFILE</button>
+  <button class="btn btn-light m-1" type="button">EXPLORE</button>
+  <button class="btn btn-light" type="button">LOGOUT</button>
+  <button class="btn btn-light m-1" type="button">TRENDING</button>
+</div>
+ </div>
+
+
+<!-- Manin -->
+<div class="col-md-6 ">
+<label for="inputPassword5" class="form-label"></label>
+<input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="whats on your mind">
+<div id="passwordHelpBlock" class="form-text mb-4">
+ What's on your mind .
+</div>
+
+<div class="card" >
+  <div class="card-body p-2">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+
+    <div class="">
+      <label for="inputPassword5" class="form-label"></label>
+      <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Write your comment">
+
+    </div>
+
+  </div>
+</div>
+  </div>
+
+<!--right sidebar -->
+  <div class="col-md-3 list-group">
+  <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <p class="mb-1"> <strong>What's happening  </strong> </p>
+      <small></small>
+    </div>
+
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+</div>
+</div>
+</div>
+
+{% endblock %}
