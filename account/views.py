@@ -45,3 +45,7 @@ def login_view(request):
 def logoutUser(request):
     logout(request)
     return redirect('account:login')
+
+def profile_settings(request):
+
+    return render(request,'account/profile.html',)
